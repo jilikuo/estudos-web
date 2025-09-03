@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <title> Landing Page - Escola de Tecnologia </title>
+</head>
+<body>
+    <!-- Menu Superior -->
+    <div id="menusuperior">
+        <a href="https://www.jvsantos.com.br">
+            <img src="img/logo.svg" id="logo" alt="Logotipo DNC">
+        </a>
+        <h1 id="titulo-menu-superior">
+            Dê os primeiros passos da <br>
+            sua carreira em Tecnologia
+        </h1>
+        <p id="subtitulo-menu-superior">
+            Inscreva-se no curso gratuito de Introdução à Tecnologia de nossa escola <br>
+            e aprenda os principais fundamentos para construir experiências efetivas.
+        </p>
+    </div>
+    <!-- Menu Informacional -->
+    <div id="menuinformacional">
+        <p class="informativo">
+            <img src="img/icons/certficado.svg"  class="icone" alt="certficado">
+            Certificado de conclusão
+        </p>
+        <p class="informativo">
+            <img src="img/icons/relogio.svg" class="icone" alt="relogio" >
+            4 horas de conteúdo
+        </p>
+        <p class="informativo">
+            <img src="img/icons/camera.svg" class="icone" alt="camera" >
+            Aulas online gravadas
+        </p>
+    </div>
+    <!-- Menu de Vídeo -->
+    <div id="videointerativo">
+        <iframe id="video" width="502" height="283" src="https://www.youtube.com/embed/sMhhdz3d6qw"
+            title="Fiz o Curso do André Young  - Vale a pena???" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div>
+            <h1 id="titulovideo">
+                Aprenda com especialistas e <br> 
+                comece seu primeiro projeto <br><br>
+            </h1>
+            <p id="textovideo">
+                Conheça o processo de desenvolvimento e entenda como utilizar <br> 
+                os principais métodos e ferramentas da área para resolver <br>
+                problemas complexos. <br><br>
+                
+                Conquiste seu certificado e desenvolva um projeto prático para <br>
+                aplicar seus conhecimentos.
+            </p>
+        </div>
+    </div>
+    <!-- Carrossel -->
+    <div id="carrossel">
+        <h1 id="titulocarrossel">
+            Mais de 500 alunos já iniciaram seus estudos
+        </h1>
+        <div id="carddiv">
+            <img id="setaesquerda" onclick="RolarParaEsquerda()" class="seta" src="img/icons/seta.svg" alt="">
+            <img id="leonardo" class="cards" src="img/cards/leonardo.svg" alt="">
+            <img id="samantha" class="cards" src="img/cards/samantha.svg" alt="">
+            <img id="bruna" class="cards" src="img/cards/bruna.svg" alt="">
+            <img id="setadireita" onclick="RolarParaDireita()" class="seta" src="img/icons/seta.svg" alt="">
+        </div>
+    </div>
+    <script src="index.js"></script>
+    <!-- Formulário -->
+     <div id="formulario">
+        <h1 id="tituloformulario">
+            Comece agora mesmo e dê o próximo passo da sua carreira
+        </h1>
+
+        <form id="mainform" action="https://api.sheetmonkey.io/form/tQerEdWjhTGur9VBfHvnEa" method="post">
+            <input type="text" placeholder="Nome" name="Name" required><br>
+            <input type="email" placeholder="E-mail" name="Email" required><br>
+            <input type="number" placeholder="(Opcional) Telefone" name="Phone"><br>
+            <input type="text" placeholder="(Opcional) Discord Tag" name="Discord"><br>
+            <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
+            <button type="submit">Comece gratuitamente agora mesmo!</button>
+        </form>
+     </div>
+</body>
+</html>
