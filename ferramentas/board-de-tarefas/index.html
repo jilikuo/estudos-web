@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Board de Tarefas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <main class="task-board">
+        <section class="title">
+            <h1>Board de Tarefas</h1>
+        </section>
+        <section class="new-task">
+            <form class="task-form">
+                <input type="text" placeholder="Nome da tarefa" required>
+                <input type="text" placeholder="Etiqueta" required>
+                <button type="submit" onclick="handleAddTask()">+</button>
+            </form>
+        </section>
+        <section class="tasks-list">
+        </section>
+        <section class="task-counter">
+            <p><span id="tasks-completed">0</span><span id="tasks-caption"> tarefas concluídas</span></p>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
